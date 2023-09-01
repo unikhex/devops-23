@@ -1,3 +1,4 @@
+"""
 name_1 = input("What is yout name: ")
 age_1 = int(input("What is your age: "))
 
@@ -22,4 +23,31 @@ elif age_1 >= 12 or age_1 <= 15:
 elif age_1 == 16:
     print("Halå", name_1,". Enligt Vårdguidens rekommendaktioner behöver individer i din ålder",age_1, "sova minst 8,5 timmar" )
 else:
-    print("Halå", name_1,". Enligt Vårdguidens rekommendaktioner behöver individer i din ålder",age_1, "sova minst 8 timmar" )
+    print("Halå", name_1,". Enligt Vårdguidens rekommendaktioner behöver individer i din ålder",age_1, "sova minst 8 timmar" )"""
+
+name = input("What is your name: ")
+age = int(input("What is your age: "))
+
+# Define a dictionary to map ages to recommended sleep hours
+age_to_sleep_hours = {
+    1: 14,
+    2: 13,
+    3: 12,
+    4: 11.5,
+    5: 11,
+    6: 11,
+    7: 10.5,
+    8: 10,
+    9: 10,
+    10: 10,
+    11: 9.5,
+}
+
+# Default sleep hours for ages not in the dictionary
+default_sleep_hours = 8
+
+# Get the recommended sleep hours based on age or use the default
+recommended_sleep_hours = age_to_sleep_hours.get(age, default_sleep_hours)
+
+# Print the message
+print(f"Hello {name}. According to Vårdguiden's recommendations, individuals your age should sleep at least {recommended_sleep_hours} hours.")
