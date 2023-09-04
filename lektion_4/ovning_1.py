@@ -1,10 +1,7 @@
-tal = input("Ange ett heltal:")
 try:
-tal = int(tal)
-kvadrat = tal * tal
-print(tal,
-"i kvadrat är"
-, kvadrat)
-except ValueError:
-print(tal ,
-"är inte ett heltal")
+    indata = input("Ange ett heltal:")
+    tal = int(indata)
+    kvadrat = tal * tal
+    print(tal,"i kvadrat är", kvadrat)
+except :
+    print(indata ,"är inte ett heltal")
