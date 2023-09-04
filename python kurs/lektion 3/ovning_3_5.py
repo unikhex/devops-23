@@ -2,6 +2,7 @@ sex = input("What is your sex? man or woman :")
 hair_colour = input("What is your hairclour :")
 eye_colour = input("What is your eye colour :")
 
+# u_p is user properties. It is just shortened to u_p.
 u_p = [sex, hair_colour, eye_colour]
 
 daniel_radcliffe = ["man", "brown", "brown"]
